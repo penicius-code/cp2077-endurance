@@ -3,6 +3,8 @@
 A second, slower reserve on top of stamina, called Oxygen, shown as a bar under Dark Future's Nerve bar, for Cyberpunk 2077. Single-player only.
 Version 1.3.1 | For game version 2.5 and Dark Future 3.0 | Status: in use in my game and working; no written test record
 
+**Download:** [latest release](https://github.com/penicius-code/cp2077-endurance/releases/latest) (zip; install steps below)
+
 > This is an unofficial fan work and is not approved/endorsed by CD PROJEKT RED. No game files are included.
 
 ## The problem
@@ -53,7 +55,7 @@ Without Mod Settings the defaults below apply. Requirements are not bundled. Ins
 ## Install
 
 1. Install the requirements above.
-2. Copy the contents of `package/` into the game folder, so that `r6\scripts\CyberslopEndurance\CyberslopEndurance.reds` exists.
+2. Download the zip from the [latest release](https://github.com/penicius-code/cp2077-endurance/releases/latest) (the same files as `package/` in this repository) and extract it into the game folder, so that `r6\scripts\CyberslopEndurance\CyberslopEndurance.reds` exists.
 3. Start the game and load a save: the aqua Oxygen bar shows under Dark Future's Nerve bar.
 
 ## Uninstall / roll back
