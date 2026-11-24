@@ -1,0 +1,28 @@
+# Cyberslop Endurance 1.1.0 (2026-11-02).
+# Dark Future's direct stamina penalties are switched off: tiredness (Energy) no longer cuts max stamina and thirst
+# (Hydration) no longer cuts stamina refill. Both needs now shrink the Oxygen reserve instead (CyberslopEndurance.reds),
+# and low oxygen is what shrinks stamina. Everything else in those effects stays (memory regen, reload time, sprint
+# interrupt tag).
+# 1.0.1: the tooltip descriptions of those eight effects are replaced with plain text (no stamina numbers; the oxygen
+# reserve is named instead). Plain text in `description` renders as is; {int_N} placeholders are still filled.
+# Folder zz_ so this loads after Dark Future's own tweaks.
+
+DarkFutureStatusEffect.EnergyPenalty_01_StatsPackageModifier_Stamina.value: 1.0
+DarkFutureStatusEffect.EnergyPenalty_02_StatsPackageModifier_Stamina.value: 1.0
+DarkFutureStatusEffect.EnergyPenalty_03_StatsPackageModifier_Stamina.value: 1.0
+DarkFutureStatusEffect.EnergyPenalty_04_StatsPackageModifier_Stamina.value: 1.0
+
+DarkFutureStatusEffect.HydrationPenalty_01_StatsPackageModifier_StaminaRegenRate.value: 1.0
+DarkFutureStatusEffect.HydrationPenalty_02_StatsPackageModifier_StaminaRegenRate.value: 1.0
+DarkFutureStatusEffect.HydrationPenalty_03_StatsPackageModifier_StaminaRegenRate.value: 1.0
+DarkFutureStatusEffect.HydrationPenalty_04_StatsPackageModifier_StaminaRegenRate.value: 1.0
+
+# Tooltip text (English). Energy intValues: [stamina, RAM regen, reload]; Hydration intValues: [stamina regen].
+DarkFutureStatusEffect.EnergyPenalty_01_UIData.description: "Energy: smaller Oxygen reserve, {int_1}% RAM Recovery Rate."
+DarkFutureStatusEffect.EnergyPenalty_02_UIData.description: "Energy: smaller Oxygen reserve, {int_1}% RAM Recovery Rate, {int_2}% reload speed. Slowly losing Nerve over time."
+DarkFutureStatusEffect.EnergyPenalty_03_UIData.description: "Energy: much smaller Oxygen reserve, {int_1}% RAM Recovery Rate, {int_2}% reload speed. Slowly losing Nerve over time."
+DarkFutureStatusEffect.EnergyPenalty_04_UIData.description: "Energy: Oxygen reserve badly reduced, {int_1}% RAM Recovery Rate, {int_2}% reload speed. Slowly losing Nerve over time."
+DarkFutureStatusEffect.HydrationPenalty_01_UIData.description: "Hydration: smaller Oxygen reserve, slower Oxygen recovery."
+DarkFutureStatusEffect.HydrationPenalty_02_UIData.description: "Hydration: smaller Oxygen reserve, slower Oxygen recovery. Sprinting and jumping consume Stamina. Slowly losing Nerve over time."
+DarkFutureStatusEffect.HydrationPenalty_03_UIData.description: "Hydration: much smaller Oxygen reserve, slow Oxygen recovery. Sprinting and jumping rapidly consume Stamina. Slowly losing Nerve over time."
+DarkFutureStatusEffect.HydrationPenalty_04_UIData.description: "Hydration: Oxygen reserve badly reduced, very slow Oxygen recovery. Sprinting and jumping consume Stamina very rapidly. Slowly losing Nerve over time."
