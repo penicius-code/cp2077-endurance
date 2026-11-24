@@ -1,7 +1,7 @@
 # Endurance
 
 A second, slower reserve on top of stamina, called Oxygen, shown as a bar under Dark Future's Nerve bar, for Cyberpunk 2077. Single-player only.
-Version 1.3.1 | For game version 2.5 and Dark Future 3.0 | Status: not run in game yet (no version has a written in-game test record)
+Version 1.3.1 | For game version 2.5 and Dark Future 3.0 | Status: in use in my game and working; no written test record
 
 > This is an unofficial fan work and is not approved/endorsed by CD PROJEKT RED. No game files are included.
 
@@ -109,7 +109,7 @@ Mod Settings > Cyberslop Endurance:
 |---|---|---|
 | 1.0.0 to 1.2.0 | 2.31 | No written in-game test record. |
 | 1.3.0 | 2.5 | Port to 2.5 and Dark Future 3.0. No written in-game test record. |
-| 1.3.1 | 2.5 | Not run in game yet. |
+| 1.3.1 | 2.5 | In use in the author's game and working (author's statement, 2026-11-24). No written test record. |
 
 The source audit checked all six wrap targets against the 2.5 game scripts.
 

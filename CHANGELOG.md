@@ -6,7 +6,7 @@
 ### Fixed
 - A save made under 25 % oxygen no longer loads with the heavy-breathing sway stuck on.
 
-Not run in game.
+In use in the author's game and working; no written test record.
 
 ## 1.3.0 - 2026-11-17
 ### Changed
