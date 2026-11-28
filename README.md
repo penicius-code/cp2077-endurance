@@ -1,7 +1,7 @@
 # Endurance
 
 A second, slower reserve on top of stamina, called Oxygen, shown as a bar under Dark Future's Nerve bar, for Cyberpunk 2077. Single-player only.
-Version 1.3.1 | For game version 2.5 and Dark Future 3.0 | Status: in use in my game and working; no written test record
+Version 1.3.2 | For game version 2.5 and Dark Future 3.0 | Status: 1.3.1 in use in my game and working; 1.3.2 compiles on 2.5, not run in game yet; no written test record
 
 **Download:** [latest release](https://github.com/penicius-code/cp2077-endurance/releases/latest) (zip; install steps below)
 
@@ -112,6 +112,7 @@ Mod Settings > Cyberslop Endurance:
 | 1.0.0 to 1.2.0 | 2.31 | No written in-game test record. |
 | 1.3.0 | 2.5 | Port to 2.5 and Dark Future 3.0. No written in-game test record. |
 | 1.3.1 | 2.5 | In use in the author's game and working (author's statement, 2026-11-24). No written test record. |
+| 1.3.2 | 2.5 | Compiles against the 2.5 script set with 0 errors. Not run in game yet. |
 
 The source audit checked all six wrap targets against the 2.5 game scripts.
 
@@ -144,7 +145,7 @@ There is no written in-game test, so these notes describe fixes and design decis
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md). Latest: 1.3.1 (2026-11-23): a save made under 25 % oxygen no longer loads with the heavy-breathing sway stuck on.
+See [CHANGELOG.md](CHANGELOG.md). Latest: 1.3.2 (2026-11-26): oxygen capacity and refill x1.3 while a status effect tagged `CyberslopOxygen.Cap` or `CyberslopOxygen.Refill` runs.
 
 ## Credits and licence
 

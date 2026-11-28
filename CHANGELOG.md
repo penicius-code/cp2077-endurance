@@ -2,6 +2,12 @@
 
 1.0.0 to 1.2.0 were built on game version 2.31; from 1.3.0 the mod is for 2.5 and Dark Future 3.0. No version has a written in-game test record.
 
+## 1.3.2 - 2026-11-26
+### Added
+- Oxygen capacity x1.3 while the player has a status effect tagged `CyberslopOxygen.Cap`, refill rate x1.3 for `CyberslopOxygen.Refill`. Cyberslop Merc Stims sets these tags (Respirocyte Infusion both, Bronchodilator Inhaler refill). It is a tag check only: Merc Stims is not required.
+
+Compiles on 2.5 with 0 errors; not run in game yet.
+
 ## 1.3.1 - 2026-11-23
 ### Fixed
 - A save made under 25 % oxygen no longer loads with the heavy-breathing sway stuck on.

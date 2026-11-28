@@ -1,4 +1,6 @@
-// Cyberslop Endurance 1.3.1, for game 2.5 and Dark Future 3.0.
+// Cyberslop Endurance 1.3.2, for game 2.5 and Dark Future 3.0.
+// 1.3.2 (2026-11-26): oxygen capacity / refill x1.3 while a status effect tagged CyberslopOxygen.Cap / .Refill runs
+// (Cyberslop Merc Stims: Respirocyte Infusion, Bronchodilator Inhaler).
 // 1.3.1 (2026-11-23): a save made under 25 % oxygen no longer loads with the heavy-breathing sway stuck on
 // (the savable BreathingHeavy effect is removed in the first 5 s after a load unless this mod owns it).
 // 1.3.0 (2026-11-17, port): Dark Future 3.0 renamed its HUD slot (DarkFutureWidgetSlot) and dropped the lock icon
@@ -827,6 +829,12 @@ public class CyberslopEndurance extends ScriptableSystem {
     let sRef: Float = this.Penalty(this.sleepPenalty * 5.0 / 6.0, 75.0, this.m_needSleep);
     let hRef: Float = this.Penalty(this.hungerPenalty * 3.0 / 4.0, 50.0, this.m_needHunger);
     this.m_refillMult = MaxF(0.40, (1.0 - tRef) * (1.0 - sRef) * (1.0 - hRef));
+    // 1.3.2 (2026-11-26): Cyberslop Merc Stims oxygen drugs (Respirocyte, Bronchodilator) via status effect tags,
+    // no dependency on that mod: CyberslopOxygen.Cap = capacity x1.3, CyberslopOxygen.Refill = refill x1.3.
+    if IsDefined(this.m_player) {
+      if StatusEffectSystem.ObjectHasStatusEffectWithTag(this.m_player, n"CyberslopOxygen.Cap") { this.m_capMult *= 1.3; }
+      if StatusEffectSystem.ObjectHasStatusEffectWithTag(this.m_player, n"CyberslopOxygen.Refill") { this.m_refillMult *= 1.3; }
+    }
     let tWait: Float = this.Penalty(this.thirstPenalty * 5.0 / 6.0, 75.0, this.m_needThirst);
     let sWait: Float = this.Penalty(this.sleepPenalty * 4.0 / 3.0, 75.0, this.m_needSleep);
     this.m_waitMult = (1.0 + tWait) * (1.0 + sWait);
